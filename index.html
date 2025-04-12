@@ -6,18 +6,14 @@
   <title>Martina King | Portfolio</title>
   <style>
     *::-webkit-scrollbar {
-      display: none;
-    }
-    * {
-      scrollbar-width: none;
-      -ms-overflow-style: none;
+        display: none;
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       background: #f9f9fc;
-      color: #2b2b2b;
+      color: #000000;
     }
     header {
       background: #444aa1;
@@ -54,11 +50,18 @@
       padding: 1rem;
     }
     section {
-      margin-bottom: 2rem;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: rgb(232, 206, 242);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    }
+    section:hover {
+        transform: scale(1.01); /* Scale the section by 5% when hovered */
     }
     h2 {
       border-bottom: 2px solid #444aa1;
@@ -75,12 +78,12 @@
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #eaeaea;
+      padding: 0.5rem;
+      background: #cfcfcf;
       font-size: 0.9rem;
     }
     a {
-      color: #444aa1;
+      color: #3b40ab;
       text-decoration: none;
     }
   </style>
@@ -90,7 +93,7 @@
     <img src="profile.jpg" alt="Martina King" class="profile-pic" />
     <div class="header-text">
       <h1>Martina King</h1>
-      <p>Cambridge Computer Science Student | Aspiring Technologist | Dual UK/Italian Citizen</p>
+      <p>Cambridge Computer Science Undergraduate</p>
     </div>
   </header>
   <main>
@@ -155,8 +158,7 @@
       <p>Email: <a href="mailto:kingmartina101@gmail.com">kingmartina101@gmail.com</a></p>
       <p>Phone: <a href="tel:+447729982018">+44 7729 982018</a></p>
       <p>Location: 25 Westgrove Lane, London, SE10 8QP</p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/martinaking</a> (add your real link)</p>
-      <p>GitHub: <a href="#">github.com/martinaking</a> (add your real link)</p>
+      <p><a href="https://www.linkedin.com/in/martina-king/">LinkedIn</a> | <a href="https://github.com/martina-king">GitHub</a></p>
     </section>
   </main>
   <footer>
