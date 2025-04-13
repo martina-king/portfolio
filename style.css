@@ -13,20 +13,55 @@ header {
     background: #deb5ef;
     color: white;
     margin-top: 2rem;
-    padding-bottom: 0.5rem;
-    padding-top: 1rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
+.banner {
+    width: 50px;
+    height: 60px;
+    background-color: #472779;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease;
+}
+.banner img {
+    width: 24px;
+    height: 24px;
+}
+.banner:hover {
+    transform: scaleY(1.5);
+}
+.about-banner:hover img {
+    content: url(pink\ about\ icon.svg);
+}
+.education-banner:hover img {
+    content: url(pink\ education\ icon.svg);
+}
+.experience-banner:hover img {
+    content: url(pink\ experience\ icon.svg);
+}
+.projects-banner:hover img {
+    content: url(pink\ projects\ icon.svg);
+}
+.skills-banner:hover img {
+    content: url(pink\ skills\ icon.svg);
+}
+.header-banners {
+    display: flex;
+    gap: 0.1rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 0.5rem;
+    z-index: 10;
 }
 .header-text {
     max-width: 500px;
@@ -39,6 +74,33 @@ header {
 .header-text p {
     font-size: 1.2rem;
     margin-top: 0.5rem;
+}
+.left-section {
+    flex: 0 0 75%;
+}
+.right-section {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    transition: transform 0.4s ease;
+}
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .left-section, .right-section {
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
 main {
     max-width: 900px;
@@ -68,7 +130,7 @@ h3 {
 }
 .skills span {
     display: inline-block;
-    background: #efcaec;
+    background: #deb5ef;
     color: #1a1a1a;
     padding: 0.3rem 0.7rem;
     border-radius: 20px;
@@ -90,11 +152,11 @@ li {
     color: white;
 }
 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 a:hover {
-    color:#472779;
+    color:#deb5ef;
 }
 .header-button {
     background-color: #deb5ef;
@@ -105,6 +167,6 @@ a:hover {
     border-radius: 5px;
 }
 .header-button:hover {
-    color: #efcaec;
+    color: #472779;
     transform: scale(1.05)
 }
