@@ -168,5 +168,6 @@ a:hover {
 }
 .header-button:hover {
     color: #472779;
-    transform: scale(1.05)
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
